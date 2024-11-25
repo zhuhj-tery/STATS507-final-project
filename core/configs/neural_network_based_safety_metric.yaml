@@ -1,0 +1,30 @@
+# Define the name of your experiment
+experiment_name: "neural_network_based_safety_metric"
+# Define the path to the dataset
+dataset: "dataset/neuralmetric/training"
+# Define the label of the experiment
+label: "Random sample 3 model"
+# Define the path to the validation dataset
+validation_data_path: "dataset/neuralmetric/unavoidablebefore0s/"
+# Define the method to load the dataset
+load_dataset_method: "split_pos_neg"
+# Define the method to load the validation dataset
+validation_save_result_root_path: "dataset/neuralmetric/unavoidablebefore0s"
+# Define the loss function, only Binary Cross Entropy is supported
+loss_func: "BCE"
+# Define the size of training batch size
+batch_size: 128
+# Define the maximum number of epochs
+max_num_epochs: 4000
+# Define the learning rate
+lr: 0.005
+# Define the model structure, only bn_mlp_sigmoid is supported
+model: 'bn_mlp_sigmoid'
+# Define the model type, only baseline is supported
+DSL_mode: "baseline"
+# Define the number of hidden layers
+layer_num: 1
+# Define the worker number for dataloader
+num_workers: 0
+# Define the dimension of input
+input_dim: 27
