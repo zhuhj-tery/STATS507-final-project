@@ -19,7 +19,7 @@ Safety metrics are crucial for autonomous vehicles (AVs) as they provide early w
     pip install -r requirements.txt
     ```
 - Download the dataset from the [link](https://drive.google.com/drive/u/1/folders/1_knBQmKAUFFyHr6pddmPqTIUha_VatJP) and extract it to the `dataset` folder. The folder structure should look like this:
-    ```bash
+    ```
     dataset
     |── checkpoints_neural_network_based_safety_metric_sota
     |   ├── best_ckpt.pt # the best checkpoint of the trained model
